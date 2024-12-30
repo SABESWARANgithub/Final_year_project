@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Healthcare Chatbot</title>
+    <link rel="stylesheet" href="fyp.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" onclick="showPage('homePage')">Home</a>
+        <a href="#" onclick="showPage('loginPage')">Login</a>
+        <a href="#" onclick="showPage('appointmentPage')">Appointment Booking</a>
+        <a href="#" onclick="showPage('chatPage')">Chat</a>
+        <a href="#" onclick="showPage('contactPage')">Contact</a>
+        <a href="#" onclick="showPage('aboutPage')">About</a>
+        <a href="#" onclick="showPage('recordsPage')">Previous Records</a>
+    </div>
+
+    <div id="homePage" class="content active">
+        <h1>Welcome to AI Healthcare</h1>
+        <p>Your one-stop solution for healthcare assistance.</p>
+    </div>
+
+    <div id="loginPage" class="content">
+        <h1>Login</h1>
+        <p>Login to access personalized healthcare features.</p>
+    </div>
+
+    <div id="appointmentPage" class="content">
+        <h1>Appointment Booking</h1>
+        <p>Book an appointment with our healthcare professionals.</p>
+    </div>
+
+    <div id="chatPage" class="content">
+        <div class="chat-container">
+            <div class="header">AI Healthcare Chatbot</div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactPage" class="content">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out to us for any queries or support.</p>
+    </div>
+
+    <div id="aboutPage" class="content">
+        <h1>About Us</h1>
+        <p>Learn more about our mission to provide AI-driven healthcare solutions.</p>
+    </div>
+
+    <div id="recordsPage" class="content">
+        <h1>Previous Records</h1>
+        <p>View your previous medical records and interactions.</p>
+    </div>
+
+    <script src="fyp.js" defer></script>
+</body>
+</html>
+
